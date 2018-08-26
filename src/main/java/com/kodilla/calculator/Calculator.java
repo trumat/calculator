@@ -1,24 +1,11 @@
 package com.kodilla.calculator;
 
 public class Calculator {
-    private double value;
-
-    public Calculator(int x) {
-        this.value = x;
+    public double addValues(double valueA, double valueB) {
+        return valueA + valueB;
     }
 
-    public void addValue(double valueToAdd) {
-        this.value += valueToAdd;
-    }
-
-    public void substractValue(double valuetoSubstract) {
-        this.value -= valuetoSubstract;
-    }
-
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+    public void substractValue(double valueA, double valueB) { return valueA - valueB; }
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator(0);
